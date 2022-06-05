@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.TelaCadastroUsuario"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nome"
+        android:layout_margin="5sp"
+        android:layout_gravity="center_horizontal"
+        android:textSize="15sp"/>
+
+    <EditText
+        android:id="@+id/txtNome"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5sp"
+        android:layout_gravity="center_horizontal"
+        android:textSize="15sp"
+        android:background="@drawable/borda_arredondada"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sobrenome"
+        android:layout_margin="5sp"
+        android:layout_gravity="center_horizontal"
+        android:textSize="15sp"/>
+
+    <EditText
+        android:id="@+id/txtSobrenome"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5sp"
+        android:layout_gravity="center_horizontal"
+        android:textSize="15sp"
+        android:background="@drawable/borda_arredondada"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/email"
+        android:layout_margin="5sp"
+        android:layout_gravity="center_horizontal"
+        android:textSize="15sp"/>
+
+    <EditText
+        android:id="@+id/txtEmail"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5sp"
+        android:layout_gravity="center_horizontal"
+        android:textSize="15sp"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/borda_arredondada"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/data_de_nascimento"
+        android:layout_margin="5sp"
+        android:layout_gravity="center_horizontal"
+        android:textSize="15sp"/>
+
+    <EditText
+        android:id="@+id/txtDataNascimento"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5sp"
+        android:layout_gravity="center_horizontal"
+        android:textSize="15sp"
+        android:inputType="date"
+        android:background="@drawable/borda_arredondada"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/senha"
+        android:layout_margin="5sp"
+        android:layout_gravity="center_horizontal"
+        android:textSize="15sp"/>
+
+    <EditText
+        android:id="@+id/txtCadastroSenha"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5sp"
+        android:layout_gravity="center_horizontal"
+        android:textSize="15sp"
+        android:inputType="textPassword"
+        android:background="@drawable/borda_arredondada"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/confirmar_senha"
+        android:layout_margin="5sp"
+        android:layout_gravity="center_horizontal"
+        android:textSize="15sp"/>
+
+    <EditText
+        android:id="@+id/txtConfirmarSenha"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5sp"
+        android:layout_gravity="center_horizontal"
+        android:textSize="15sp"
+        android:inputType="textPassword"
+        android:background="@drawable/borda_arredondada"/>
+
+    <Button
+        android:id="@+id/btnSalvar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="5sp"
+        android:text="@string/salvar"/>
+
+</LinearLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="@layout/activity_tela_principal"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16sp"
+        android:layout_marginTop="8sp"
+        android:layout_marginEnd="16sp"
+        android:layout_marginBottom="16sp">
+
+        <ImageView
+            android:id="@+id/imgMovimentacao"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:src="@drawable/ic_credito"
+            />
+
+        <TextView
+            android:id="@+id/lblOperacao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Operação"
+            android:ellipsize="marquee"
+            android:padding="2sp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_alignTop="@id/imgMovimentacao"
+            android:layout_marginStart="16sp"
+            android:layout_toEndOf="@id/imgMovimentacao"
+            android:layout_toStartOf="@id/lblData"/>
+
+            <TextView
+                android:id="@+id/lblAutorOperacao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/darkerGray"
+                android:layout_below="@id/lblOperacao"
+                android:layout_alignStart="@id/lblOperacao"
+                android:ellipsize="marquee"
+                tools:text="Nome Autor Operacao"
+                />
+
+        <TextView
+            android:id="@+id/lblValorOperacao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/darkerGray"
+            android:layout_below="@id/lblAutorOperacao"
+            android:layout_alignStart="@id/lblOperacao"
+            android:ellipsize="marquee"
+            tools:text="Valor R$ 100,00"
+            />
+
+            <TextView
+                android:id="@+id/lblData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/darkerGray"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:text="Data"
+                android:ellipsize="marquee"
+                android:textSize="16sp"/>
+    </RelativeLayout>
+
+</LinearLayout>
